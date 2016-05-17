@@ -169,7 +169,7 @@
 		}
 
 		a:hover {
-			color: #ff7496;
+			color: #de5041;
 		}
 
 	strong, b {
@@ -636,8 +636,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: #ff7496;
-			color: #ff7496 !important;
+			border-color: #cd4f46;
+			color: #cd4f46 !important;
 		}
 
 		input[type="submit"].icon,
@@ -781,7 +781,7 @@
 		align-self: flex-end;
 		width: 100%;
 		padding: 1.5em 0 0 0;
-		color: rgba(255, 255, 255, 0.75);
+		color: #e4958e;
 		cursor: default;
 		text-align: center;
 	}
