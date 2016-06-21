@@ -39,7 +39,7 @@ header #topmenu p {
 .cover {
   margin-top: 14vh;
   display: flex;
-  background-image: url('images/orchestra.jpg');
+  background-image: url('../images/orchestra.jpg');
   background-size: cover;
   color: #ffffff;
   height: 78vh;
