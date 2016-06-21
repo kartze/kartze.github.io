@@ -26,15 +26,6 @@ header h2 {
   left: 1vw;
 }
 
-/*
-header h1 {
-	font-size: 5vh;
-	color: #c5b358;
-  position: relative;
-  left: 1vw;
-}
-*/
-
 header #topmenu p {
   display: inline-block;
   float: right;
@@ -66,38 +57,12 @@ header #topmenu p {
   background-color: rgb(233, 204, 1);
 }
 
-/*
-#middlemenu {
-  margin-top: 14vh;
-  display: flex;
-  text-align: center;
-  background: url("images/schoolfront2.jpg") no-repeat center center;
-  background-size: cover;
-  height: 85vh;
-}
-*/
-
 #middlemenu {
   padding: 0.1vh;
   background-color: black;
-/*
-  background-color: rgb(233, 204, 1);
-  */
   font-family: 'Roboto', sans-serif;
   text-align: center;
-/*  position: -webkit-sticky;
-  position: sticky;
-  z-index: 1;
-  top: 14vh; */
 }
-
-/*
-.sticky {
-  position: fixed;
-  z-index: 100;
-  border-top: 14vh;
-}
-*/
 
 #middlemenu li {
   display: inline-block;
@@ -147,42 +112,50 @@ header #topmenu p {
   transform: scaleX(1);
 }
 
-.introduction #AcademiesEducation {
-  background-image: url("images/classroom.jpg");
-  background-size: contain;
-  width: 30vw;
-  height: 30vh;
+.events {
+  margin-top: -1vh;
+}
+
+.introduction {
   margin-top: 1vh;
-  padding-top: 15vh;
-  padding-right: 5vh;
-  text-align: center;
+}
+
+.introduction img {
+  width: 40.2vw;
+  height: 45vh;
+  float: left;
+}
+
+.introduction #whybcatext {
+  background-color: rgb(215, 179, 61);
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  position: relative;
+  top: -1vh;
+  margin: 1vh;
+  width: 53vw;
+  height: 42vh;
+  vertical-align: middle;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  padding-bottom: 3vh;
 }
 
 .introduction #whybcatext h2 {
-  font-family: "Quicksand", sans-serif;
-  display: inline;
-  width: 30vw;
-  height: 30vh;
+  font-size: 3.25vh;
+}
+
+.introduction #whybcatext h3 {
+  font-size: 2.75vh;
+}
+
+.introduction #whybcatext p {
+  font-size: 2.5vh;
+}
+
+.footer {
   margin-top: 1vh;
-  padding-top: 15vh;
-  padding-right: 5vh;
-  text-align: center;
-}
-
-.main {
-  font-family: 'Roboto', sans-serif;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
-.main h2 {
-  color: rgb(215, 179, 61);
-}
-
-footer {
-  background: lightgrey;
+  background-color: lightgrey;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 50px;
@@ -196,13 +169,15 @@ footer {
 #statement {
   display: inline-block;
   position: relative;
+  text-align: right;
   float: right;
-  width: 20vw;
+  width: 50vw;
+  height: 1vh;
 }
 
 #copyright {
-  float: left;
+  float: right;
+  text-align: right;
   position: relative;
-  width: 90vw;
-  top: 3vh;
+  width: 50vw;
 }
