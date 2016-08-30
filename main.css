@@ -19,10 +19,14 @@ body {
 }
 
 #main {
-  margin-right: 27vw;
+  margin-right: 28vw;
   padding-right: 2vw;
   border-right-style: solid;
   border-width: 2px;
+}
+
+footer {
+  margin-top: 5vh;
 }
 
 h1 {
@@ -35,14 +39,33 @@ h2 {
   font-size: 30px;
 }
 
-nav, p {
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+p {
   font-family: 'Raleway', sans-serif;
   font-size: 21px;
 }
 
-h3 {
+nav {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
+}
+
+.contact i {
+  font-size: 20px;
+  color: #d14233;
+}
+
+.contact {
+  font-size: 15px;
+}
+
+.contact a{
+  text-decoration: none;
+  color: black;
 }
 
 .light {
@@ -90,19 +113,109 @@ h3 {
   transform: scaleX(1);
 }
 
-.contact i {
-  font-size: 20px;
-  color: #d14233;
-}
-
-.contact {
-  font-size: 15px;
-}
-
 .right {
   position: absolute;
   top: 19vh;
   right: 10vw;
   width: 25vw;
   border-radius: 50%
+}
+
+#rig {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+    background-color: #000;
+}
+
+#rig li {
+    display: inline-block;
+    *display: inline;/*for IE6 - IE7*/
+    width: 25%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.rig-cell {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.rig-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform: scale(1.05);
+}
+
+.rig-overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size: 50px 50px;
+    opacity: 0;
+    filter: alpha(opacity=0);/*For IE6 - IE8*/
+    transition: all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity: 0.8;
+}
+
+.rig-text {
+    display: block;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal!important;
+    top: 40%;
+    color: white;
+    opacity: 0;
+    filter: alpha(opacity=0);/*For older IE*/
+    transform: translateY(-20px);
+    transition: all .3s;
+}
+
+#rig li:hover .rig-text {
+    transform: translateY(0px);
+    opacity: 0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #rig li {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    #rig li {
+        width: 100%;
+    }
 }
