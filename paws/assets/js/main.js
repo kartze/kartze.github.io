@@ -1,187 +1,199 @@
-/*
-	Eventually by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+		
+$(function(){
 
-(function() {
 
-	"use strict";
+	/*  Gallery lightBox
+ 	================================================*/ 
 
-	// Methods/polyfills.
+ 	if( $(".lightbox").length > 0 ) {
 
-		// classList | (c) @remy | github.com/remy/polyfills | rem.mit-license.org
-			!function(){function t(t){this.el=t;for(var n=t.className.replace(/^\s+|\s+$/g,"").split(/\s+/),i=0;i<n.length;i++)e.call(this,n[i])}function n(t,n,i){Object.defineProperty?Object.defineProperty(t,n,{get:i}):t.__defineGetter__(n,i)}if(!("undefined"==typeof window.Element||"classList"in document.documentElement)){var i=Array.prototype,e=i.push,s=i.splice,o=i.join;t.prototype={add:function(t){this.contains(t)||(e.call(this,t),this.el.className=this.toString())},contains:function(t){return-1!=this.el.className.indexOf(t)},item:function(t){return this[t]||null},remove:function(t){if(this.contains(t)){for(var n=0;n<this.length&&this[n]!=t;n++);s.call(this,n,1),this.el.className=this.toString()}},toString:function(){return o.call(this," ")},toggle:function(t){return this.contains(t)?this.remove(t):this.add(t),this.contains(t)}},window.DOMTokenList=t,n(Element.prototype,"classList",function(){return new t(this)})}}();
+		$(".lightbox").prettyPhoto();
+		
+	}
 
-		// canUse
-			window.canUse=function(p){if(!window._canUse)window._canUse=document.createElement("div");var e=window._canUse.style,up=p.charAt(0).toUpperCase()+p.slice(1);return p in e||"Moz"+up in e||"Webkit"+up in e||"O"+up in e||"ms"+up in e};
+	/*  Owl carousel
+ 	================================================*/ 
 
-		// window.addEventListener
-			(function(){if("addEventListener"in window)return;window.addEventListener=function(type,f){window.attachEvent("on"+type,f)}})();
+ 	if( $(".owl-carousel").length > 0 ) {
 
-	// Vars.
-		var	$body = document.querySelector('body');
+		$(".owl-carousel").owlCarousel({
 
-	// Disable animations/transitions until everything's loaded.
-		$body.classList.add('is-loading');
+			 margin:25,
+			 stagePadding: 25,
+	   		 nav:true,
+	   		 navText: [
+		      "<i class='glyphicon glyphicon-chevron-left'></i>",
+		      "<i class='glyphicon glyphicon-chevron-right'></i>"
+		    ],
+		    responsive:{
+		        0:{
+		            items:2
+		        },
+		        600:{
+		            items:4
+		        },
+		        1000:{
+		            items:8
+		        }
+		    }
 
-		window.addEventListener('load', function() {
-			window.setTimeout(function() {
-				$body.classList.remove('is-loading');
-			}, 100);
 		});
+	}
 
-	// Slideshow Background.
-		(function() {
 
-			// Settings.
-				var settings = {
+	 /* Contact form ajax Handler
+    ================================================*/
 
-					// Images (in the format of 'url': 'alignment').
-						images: {
-							'images/bg01.jpg': 'center',
-							'images/bg02.jpg': 'center',
-							'images/bg03.jpg': 'center',
-							'images/bg04.jpg': 'center'
-						},
+    $(".ajax-form").on('submit', function() {
+    	var form = $(this);
+        var formURL = $(this).attr("action");
+        var postData = $(this).serializeArray();
 
-					// Delay.
-						delay: 6000
+        $.ajax({
+            url: formURL,
+            type: 'POST',
+            data: postData,
+            dataType: 'json',
 
-				};
+            success:function(data, textStatus, jqXHR){
 
-			// Vars.
-				var	pos = 0, lastPos = 0,
-					$wrapper, $bgs = [], $bg,
-					k, v;
+                if(data.success==1){
 
-			// Create BG wrapper, BGs.
-				$wrapper = document.createElement('div');
-					$wrapper.id = 'bg';
-					$body.appendChild($wrapper);
+                    form.find(".alert").fadeOut();
+                    form.find(".alert-success").html(data.message);
+                    form.find(".alert-success").fadeIn(600);
+                    
 
-				for (k in settings.images) {
+                }else{
 
-					// Create BG.
-						$bg = document.createElement('div');
-							$bg.style.backgroundImage = 'url("' + k + '")';
-							$bg.style.backgroundPosition = settings.images[k];
-							$wrapper.appendChild($bg);
+                	form.find(".alert").fadeOut();
+                    form.find(".alert-danger").html(data.message);
+                    form.find(".alert-danger").fadeIn(600);
 
-					// Add it to array.
-						$bgs.push($bg);
+                }
+            },
 
-				}
+            error: function(jqXHR, textStatus, errorThrown)  { 
+                
+                console.log(errorThrown);
+            }
 
-			// Main loop.
-				$bgs[pos].classList.add('visible');
-				$bgs[pos].classList.add('top');
+        });
+            
 
-				// Bail if we only have a single BG or the client doesn't support transitions.
-					if ($bgs.length == 1
-					||	!canUse('transition'))
-						return;
+        return false;
+     })
 
-				window.setInterval(function() {
 
-					lastPos = pos;
-					pos++;
 
-					// Wrap to beginning if necessary.
-						if (pos >= $bgs.length)
-							pos = 0;
+    /*
+	On scroll animations
+	================================================
+	*/
 
-					// Swap top images.
-						$bgs[lastPos].classList.remove('top');
-						$bgs[pos].classList.add('visible');
-						$bgs[pos].classList.add('top');
 
-					// Hide last image after a short delay.
-						window.setTimeout(function() {
-							$bgs[lastPos].classList.remove('visible');
-						}, settings.delay / 2);
+    var $elems = $('.animate-onscroll');
 
-				}, settings.delay);
+    var winheight = $(window).height();
+    var fullheight = $(document).height();
+ 
+    $(window).scroll(function(){
+        animate_elems();
+    });
 
-		})();
 
-	// Signup Form.
-		(function() {
 
-			// Vars.
-				var $form = document.querySelectorAll('#signup-form')[0],
-					$submit = document.querySelectorAll('#signup-form input[type="submit"]')[0],
-					$message;
+    function animate_elems() {
 
-			// Bail if addEventListener isn't supported.
-				if (!('addEventListener' in $form))
-					return;
+	    wintop = $(window).scrollTop(); // calculate distance from top of window
+	 
+	    // loop through each item to check when it animates
+	    $elems.each(function(){
+	    	
+	      $elm = $(this);
+	 
+	      if($elm.hasClass('animated')) { return true; } // if already animated skip to the next item
+	 
+	      topcoords = $elm.offset().top; // element's distance from top of page in pixels
+	 
+	      if(wintop > (topcoords - (winheight*.75))) {
+	        // animate when top of the window is 3/4 above the element
+	        $elm.addClass('animated');
+	      }
 
-			// Message.
-				$message = document.createElement('span');
-					$message.classList.add('message');
-					$form.appendChild($message);
+	    });
 
-				$message._show = function(type, text) {
+	  } // end animate_elems()
 
-					$message.innerHTML = text;
-					$message.classList.add(type);
-					$message.classList.add('visible');
+	
 
-					window.setTimeout(function() {
-						$message._hide();
-					}, 3000);
 
-				};
+ 	/*  Google map Script
+ 	====================================================*/ 
 
-				$message._hide = function() {
-					$message.classList.remove('visible');
-				};
+	function initMap() {
 
-			// Events.
-			// Note: If you're *not* using AJAX, get rid of this event listener.
-				$form.addEventListener('submit', function(event) {
+  		
+  		var mapLatitude = 31.423308 ; // Google map latitude 
+  		var mapLongitude = -8.075145 ; // Google map Longitude  
 
-					event.stopPropagation();
-					event.preventDefault();
+	    var myLatlng = new google.maps.LatLng( mapLatitude, mapLongitude );
 
-					// Hide message.
-						$message._hide();
+	    var mapOptions = {
 
-					// Disable submit.
-						$submit.disabled = true;
+	            center: myLatlng,
+	            mapTypeId: google.maps.MapTypeId.ROADMAP,
+	            zoom: 10,
+	            scrollwheel: false
+	          };   
 
-					// Process form.
-					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
-					// but there's enough here to piece together a working AJAX submission call that does.
-						window.setTimeout(function() {
+	    var map = new google.maps.Map(document.getElementById("contact-map"), mapOptions);
 
-							var hsEntry = new String("2140717237");
-							var hsKey = new String("1J8tfBGDfrzj5slY8iSn18f-TG1nB5FObL-NnBTzuHRw");
-							var hsForm = new String("1nvfx_iRuFrIvjmD0XqLKxPS0MM6FosRhEOJMG6Vdr7E");
-							var hsInput = document.getElementById("email").value;
+	    var marker = new google.maps.Marker({
+	    	
+	      position: myLatlng,
+	      map : map,
+	      
+	    });
 
-							var hsURL = new String("http://docs.google.com/forms/d/") + hsForm + new String("/formResponse?entry.") + hsEntry
-								+ new String("=") + hsInput + new String("&submit=Submit&formkey=") + hsKey + new String("&ifq");
+	    // To add the marker to the map, call setMap();
+	    marker.setMap(map);
 
-							var xhttp = new XMLHttpRequest();
-							xhttp.open("GET", hsURL, true);
-							xhttp.send();
+	    // Map Custom style
+	    var styles = [
+		  {
+		    stylers: [
+		      { hue: "#1f76bd" },
+		      { saturation: 80 }
+		    ]
+		  },{
+		    featureType: "road",
+		    elementType: "geometry",
+		    stylers: [
+		      { lightness: 80 },
+		      { visibility: "simplified" }
+		    ]
+		  },{
+		    featureType: "road",
+		    elementType: "labels",
+		    stylers: [
+		      { visibility: "off" }
+		    ]
+		  }
+		];
 
-							// Reset form.
-								$form.reset();
+		map.setOptions({styles: styles});
 
-							// Enable submit.
-								$submit.disabled = false;
+	};
 
-							// Show message.
-								$message._show('success', 'Thank you!');
-								//$message._show('failure', 'Something went wrong. Please try again.');
+	if( $("#contact-map").length > 0 ) {
 
-						}, 750);
+		initMap();
+		
+	}
 
-				});
+});
 
-		})();
 
-})();
+
+		
