@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- PrettyPhoto -->
+    <link rel="stylesheet" href="assets/css/prettyPhoto.css">
     <!-- Template main Css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Modernizr -->
@@ -28,8 +30,9 @@
                         <div class="col-sm-6 col-xs-12"> </div>
                         <div class="col-sm-6 col-xs-12">
                             <ul class="list-unstyled list-inline header-contact text-right">
-                                <li> <i class="fa fa-phone"></i> <a href="tel:">+1 201 982 8767 </a> </li>
-                                <li> <i class="fa fa-envelope"></i> <a href="mailto:contact.officialpaws@gmail.com">contact.officialpaws@gmail.com</a> </li>
+                              <li> <a href="tel:"><i class="fa fa-phone"></i> +1 201 982 8767 </a> </li>
+                              <li> <a href="mailto:contact.officialpaws@gmail.com"><i class="fa fa-envelope"></i>contact.officialpaws@gmail.com</a> </li>
+                              <li> <a target="_blank" href="https://www.facebook.com/officialpaws"><i class="fa fa-facebook"></i> </a>
                             </ul>
                             <!-- /.header-contact  -->
                         </div>
@@ -53,8 +56,8 @@
                             <li><a href="about.html">WHO WE ARE</a></li>
                             <li class="has-child"><a class="is-active" href="ourwork.html">OUR WORK</a>
                                 <ul class="submenu">
-                                    <li class="submenu-item"><a href="#">Blog</a></li>
-                                    <li class="submenu-item"><a href="#">News</a></li>
+                                  <li class="submenu-item"><a href="ourwork.html#blog">Blog</a></li>
+                                  <li class="submenu-item"><a href="ourwork.html#news">News</a></li>
                                     <li class="submenu-item"><a href="photos.html">Photos</a></li>
                                 </ul>
                             </li>
@@ -92,55 +95,147 @@
     <div class="main-container">
         <div class="container">
             <div class="row fadeIn animated">
-                <div class="col-md-6"> <img src="assets/images/about-us.jpg" alt="" class="img-responsive"> </div>
-                <div class="col-md-6">
-                    <h2 class="title-style-2">SUBTITLE<span class="title-under"></span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nulla quae possimus id fugit totam perspiciatis ad consequatur natus dolores unde ipsa, architecto, dignissimos corrupti explicabo provident debitis suscipit,
-                        beatae! </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi pariatur, voluptatum molestiae voluptas ducimus tempora numquam eligendi quos, quia aut quidem et, odio deleniti amet natus accusamus fugit! Temporibus, tenetur.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatem, ea, quisquam vero ullam nesciunt recusandae expedita similique nisi! Ducimus, reiciendis, quia. Explicabo minima error excepturi minus, aperiam illum fugit.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi pariatur, voluptatum molestiae voluptas ducimus tempora numquam eligendi quos, quia aut quidem et, odio deleniti amet natus accusamus fugit! Temporibus, tenetur.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatem, ea, quisquam vero ullam nesciunt recusandae expedita similique nisi! Ducimus, reiciendis, quia. Explicabo minima error excepturi minus, aperiam illum fugit
-                        , quia. Explicabo minima error excepturi minus, aperiam illum fugit.</P>
+                <div class="col-md-4"> <img src="assets/images/about-us.jpg" alt="" class="img-responsive"> </div>
+                <div class="col-md-8 fadeIn animated">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra enim ut dolor finibus aliquam. Fusce tempor dictum lectus, ac facilisis lacus dictum eu. Donec sit amet ante vel neque rhoncus venenatis. Vivamus pellentesque id odio sed tincidunt. Morbi varius condimentum quam, congue vulputate est consequat in. Aenean auctor leo non arcu euismod molestie. Aliquam nec mi non nisi pellentesque ullamcorper et tempus lorem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed lobortis congue aliquam. Donec a efficitur mauris, in rutrum arcu. Suspendisse cursus nisi mi, a vestibulum arcu rhoncus sed. Integer ultrices libero nec turpis pharetra malesuada. Praesent nibh dui, facilisis a lorem id, efficitur tempus nisi.</p>
+<p>Fusce convallis eget arcu vitae venenatis. Donec non cursus urna, a elementum erat. Sed ut ligula ut nulla semper maximus ac vitae arcu. Morbi justo nisl, malesuada non feugiat vitae, faucibus vitae ligula. Quisque convallis, lectus non gravida interdum, sapien arcu iaculis sapien, ac euismod lacus nunc et velit. Proin placerat, diam in viverra commodo, orci augue consequat odio, at convallis nisl lectus vitae enim. In urna ligula, fermentum ut enim id, vulputate varius est. Ut eu luctus quam. Cras feugiat egestas nisi, ut fermentum mi vestibulum non. Quisque porttitor ultrices libero ut pharetra.</p>
                 </div>
             </div>
             <!-- /.row -->
-            <div class="section-home about-us">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="about-us-col">
-                            <div class="col-icon-wrapper"> <img src="assets/images/icons/our-mission-icon.png" alt=""> </div>
-                            <h3 class="col-title">our mission</h3>
-                            <div class="col-details">
-                                <p>Lorem ipsum dolor sit amet consect adipisscin elit proin vel lectus ut eta esami vera dolor sit amet consect</p>
-                            </div> <a href="#" class="btn btn-primary"> Read more </a> </div>
+            <div class="row ">
+                <div class="col-md-12 fadeIn animate-onscroll">
+                    <div role="tabpanel">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#blog" aria-controls="blog" role="tab" data-toggle="tab">Blog</a></li>
+                            <li role="presentation"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">News</a></li>
+                            <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">Photos</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="blog">
+                                <div class="col-md-12 fadeIn animate-onscroll">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1
+                                </a>
+                              </h4> </div>
+                                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Collapsible Group Item #2
+                                </a>
+                              </h4> </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Collapsible Group Item #3
+                                </a>
+                              </h4> </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="news">
+                              <div class="col-md-12 fadeIn animate-onscroll">
+                                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingFour">
+                                              <h4 class="panel-title">
+                                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Collapsible Group Item #1
+                              </a>
+                            </h4> </div>
+                                          <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                                              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                  ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                  </div>
+                                          </div>
+                                      </div>
+                                      <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingFive">
+                                              <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Collapsible Group Item #2
+                              </a>
+                            </h4> </div>
+                                          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                  ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                  </div>
+                                          </div>
+                                      </div>
+                                      <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingSix">
+                                              <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Collapsible Group Item #3
+                              </a>
+                            </h4> </div>
+                                          <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                                  ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                  </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <p></p>
+                              </div>
+                             </div>
+                            <div role="tabpanel" class="tab-pane"
+                                id="photos">
+                                <div class="container gallery fadeIn animated">
+                                    <div class="row">
+                                        <a href="assets/images/gallery/7610291856_931fb9f461_k.jpg" class="col-md-3 col-sm-4 gallery-item lightbox"> <img src="assets/images/gallery/thumb/7610291856_931fb9f461_k.jpg" alt=""> <span class="on-hover">
+                        							<span class="hover-caption">Image Caption</span> </span>
+                                        </a>
+                                        <!-- /.gallery-item -->
+                                        <a href="assets/images/gallery/children-82272_1280.jpg" class="col-md-3 col-sm-4 gallery-item lightbox"> <img src="assets/images/gallery/thumb/children-82272_1280.jpg" alt=""> <span class="on-hover">
+                        							<span class="hover-caption">Image Caption</span> </span>
+                                        </a>
+                                        <!-- /.gallery-item -->
+                                        <a href="assets/images/gallery/human-rights.jpg" class="col-md-3 col-sm-4 gallery-item lightbox"> <img src="assets/images/gallery/thumb/human-rights.jpg" alt=""> <span class="on-hover">
+                        							<span class="hover-caption">Image Caption</span> </span>
+                                        </a>
+                                        <!-- /.gallery-item -->
+                                        <a href="assets/images/gallery/old-books-436498_1280.jpg" class="col-md-3 col-sm-4 gallery-item lightbox"> <img src="assets/images/gallery/thumb/old-books-436498_1280.jpg" alt=""> <span class="on-hover">
+                        							<span class="hover-caption">Image Caption</span> </span>
+                                        </a>
+                                        <!-- /.gallery-item -->
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="about-us-col">
-                            <div class="col-icon-wrapper"> <img src="assets/images/icons/make-donation-icon.png" alt=""> </div>
-                            <h3 class="col-title">Make donations</h3>
-                            <div class="col-details">
-                                <p>Lorem ipsum dolor sit amet consect adipisscin elit proin vel lectus ut eta esami vera dolor sit amet consect</p>
-                            </div> <a href="#" class="btn btn-primary"> Read more </a> </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="about-us-col">
-                            <div class="col-icon-wrapper"> <img src="assets/images/icons/help-icon.png" alt=""> </div>
-                            <h3 class="col-title">Help & support</h3>
-                            <div class="col-details">
-                                <p>Lorem ipsum dolor sit amet consect adipisscin elit proin vel lectus ut eta esami vera dolor sit amet consect</p>
-                            </div> <a href="#" class="btn btn-primary"> Read more </a> </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="about-us-col">
-                            <div class="col-icon-wrapper"> <img src="assets/images/icons/programs-icon.png" alt=""> </div>
-                            <h3 class="col-title">our programs</h3>
-                            <div class="col-details">
-                                <p>Lorem ipsum dolor sit amet consect adipisscin elit proin vel lectus ut eta esami vera dolor sit amet consect</p>
-                            </div> <a href="#" class="btn btn-primary"> Read more </a> </div>
-                    </div>
+                    <p></p>
                 </div>
-                <!-- /.row -->
             </div>
         </div>
     </div>
@@ -197,6 +292,8 @@
     </script>
     <!-- Bootsrap javascript file -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <!-- PrettyPhoto javascript file -->
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
     <!-- Template main javascript -->
     <script src="assets/js/main.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -215,6 +312,6 @@
         ga('create', 'UA-XXXXX-X');
         ga('send', 'pageview');
     </script>
-    </body>
+</body>
 
-    </html>
+</html>
