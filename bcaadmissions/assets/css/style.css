@@ -1,0 +1,183 @@
+header, footer {
+  font-family: "Droid Serif", serif;
+}
+
+header {
+  padding: 1vh;
+  position: fixed;
+  top: 0;
+  height: 14vh;
+  background: white;
+  width: 100%;
+  z-index: 1;
+}
+
+header .logo {
+  float: left;
+  max-height: 13vh;
+  margin: 1vh;
+  margin-left: 2vw;
+}
+
+header h2 {
+  font-size: 3vh;
+	color: black;
+  position: relative;
+  left: 1vw;
+}
+
+header #topmenu p {
+  display: inline-block;
+  float: right;
+  align-content: flex-end;
+  padding-right: 5vw;
+  bottom: 7.85vh;
+  position: relative;
+  font-size: 2.2vh;
+}
+
+.cover {
+  margin-top: 14vh;
+  display: flex;
+  background-image: url('../images/orchestra.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 78vh;
+}
+
+.cover h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 8vh;
+  color: black;
+  padding-left: 7vw;
+  padding-top: 5vh;
+}
+
+.cover h1 mark {
+  background-color: rgb(233, 204, 1);
+}
+
+#middlemenu {
+  padding: 0.1vh;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+#middlemenu li {
+  display: inline-block;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  letter-spacing: 1px;
+  font-size: 2.5vh;
+}
+
+.underline {
+	position: relative;
+	color: white;
+	text-decoration: none;
+  display:inline-block;
+}
+
+.underline:hover {
+	color: gold;
+}
+
+.underline:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: gold;
+  visibility: hidden;
+
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.underline:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.events {
+  margin-top: -1vh;
+}
+
+.introduction {
+  margin-top: 1vh;
+}
+
+.introduction img {
+  width: 40.2vw;
+  height: 45vh;
+  float: left;
+}
+
+.introduction #whybcatext {
+  background-color: rgb(215, 179, 61);
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  position: relative;
+  top: -1vh;
+  margin: 1vh;
+  width: 53vw;
+  height: 42vh;
+  vertical-align: middle;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  padding-bottom: 3vh;
+}
+
+.introduction #whybcatext h2 {
+  font-size: 3.25vh;
+}
+
+.introduction #whybcatext h3 {
+  font-size: 2.75vh;
+}
+
+.introduction #whybcatext p {
+  font-size: 2.5vh;
+}
+
+.footer {
+  margin-top: 1vh;
+  background-color: lightgrey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#contact {
+  float: left;
+}
+
+#statement {
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  float: right;
+  width: 50vw;
+  height: 1vh;
+}
+
+#copyright {
+  float: right;
+  text-align: right;
+  position: relative;
+  width: 50vw;
+}
