@@ -1,0 +1,111 @@
+body {
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: "Comfortaa";
+}
+
+p {
+  font-size: 1.5em;
+  font-family: "Comfortaa";
+  line-height: 1.5em;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+.underline:hover {
+  color: gold;
+  text-decoration: none;
+}
+
+.underline:before {
+  background-color: gold;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  text-decoration: none;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.underline:hover:before {
+  text-decoration: none;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.main {
+  display: flex;
+  justify-content: left;
+  background-color: black;
+  border: 0.5px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background-color: lightblue;
+}
+
+.main a {
+  font-family: "Comfortaa";
+  text-transform: lowercase;
+  padding: 25px;
+  font-size: 1.5em;
+}
+
+.main a:hover {
+  color: white;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  font-size: 23px;
+}
+
+.navright {
+  text-align: right;
+}
+
+.contact {
+  font-size: 23px;
+}
+
+.contact a:hover {
+  color: gold;
+}
