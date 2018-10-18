@@ -2,84 +2,325 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
   <title>karisa tzeng</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:300">
-  <!-- link font awesome-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
   <script src="https://use.fontawesome.com/c09c774f35.js"></script>
+  <link rel="icon" href="favicon.ico">
+
+  <!-- STYLE -->
+  <style>
+    body {
+      margin: 5% 25% 15% 10%;
+      font-family: 'Alegreya', serif;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    .section {
+      margin: 0;
+    }
+
+    .col,
+    .col-lg,
+    .col-xl,
+    .col-lg-7,
+    .col-xl-7 {
+      padding: 0px;
+      margin-right: 5%;
+    }
+
+    .col-lg-4,
+    .col-xl-4 {
+      margin-left: -25px;
+    }
+
+    #quiet {
+      text-decoration: none;
+      list-style: none;
+      padding: 0;
+    }
+
+    .collapsible {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+    }
+
+    .section {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+    }
+
+    .column {
+      -ms-flex: 25%;
+      /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-bottom: 8px;
+      vertical-align: middle;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .hide2 {
+        display: none;
+      }
+    }
+
+
+    @media (max-width: 600px) {
+      .hide3 {
+        display: none;
+      }
+    }
+
+    div {
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
+  <!--
+  <p>i don't want to rely on Facebook / LinkedIn / other social media.<a id="quiet" href="#social">*</a> i just want some online <b><i><u>SPACE</u></i></b>. welcome!</p>
+-->
+
   <!-- NAVBAR -->
-  <div class="container navbar">
-    <div class="row">
-      <div class="col">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <a href="#" class="underline"><h3>karisa tzeng</h3></a>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 navright">
-          <a href="#" class="underline"><h3>work</h3></a> |
-          <a href="about.html" class="underline"><h3>about</h3></a>
-        </div>
-      </div>
-    </div>
+  <div class="nav">
+    <ul id="quiet">
+      <li><a href="#about">about</a></li>
+      <li><a href="#values">values</a></li>
+      <li><a href="#present">present</a></li>
+      <li><a href="#adventures">adventures</a> | <a href="bucket.html">bucket</a></li>
+      <li><a href="#thanks">shoutouts</a></li>
+      <li><a href="#ideas">ideas</a></li>
+      <li><a href="#filmfest">next film fest: Oct 26</a></li>
+    </ul>
   </div>
 
   <!-- MAIN PAGE CONTENT -->
-  <div class="container work">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="main">
-          <a href="oops.html">UX/UI</a>
+  <div class="">
+    <div class="section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-xl-7">
+            <h1>karisa tzeng</h1>
+            <p>i design both on- and offline spaces. i build communities for people to share knowledge and act upon their ideas. i can connect you to other cool people working in tech, design, entrepreneurship, and beyond.
+            </p>
+
+            <p>if you ever want to chat: <b>Messenger @karisatzeng</b> or text 857-701-8975.</p>
+
+            <p>residing: Boston, MA, US until Dec 16</p>
+
+            <!--
+            <p class="collapsible" id="social">*note on social media ⇣</p>
+            <div class="content">
+              <p>i'm not interested in:</p>
+              <ul>
+                <li>photos without takeaways</li>
+                <li>upvote counts that are arbitrary</li>
+                <li>commercials</li>
+                <li>interrupting a moment to post to people who likely will not appreciate the photo</li>
+              </ul>
+              <p>i really care about you, your passions, and being able to keep connected, and that is why i like <s>Facebook</s> Messenger so much.</p>
+            </div>
+
+            <p class="collapsible" id="social">want my email? ⇣</p>
+            <div class="content">
+              <p>if you need to send a file or have good reason to send an impersonal (re: formal) email, request my email through one of the chat clients above. i very actively and professionally do use email but i want to know you as a person. this is
+                best done through a conversation. i'm a friend, not just a coworker!</p>
+            </div>
+          -->
+
+            <p>i'm excited for:</p>
+            <ul>
+              <li>Scout Studio's team retreat to New Hampshire</li>
+              <li><a href="#filmfest">Karisa's (Second) Fall (Short) Film Fest Friday</a> (on Oct 26!)</li>
+            </ul>
+
+            <h1 id="values">values</h1>
+            <ul>
+              <li>thoughtfulness</li>
+              <li>independence</li>
+              <li>confidence</li>
+              <li>professionalism</li>
+            </ul>
+
+            <!-- JS COLLAPSIBLE -->
+            <script>
+              var coll = document.getElementsByClassName("collapsible");
+              var i;
+
+              for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var content = this.nextElementSibling;
+                  if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                  } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                  }
+                });
+              }
+            </script>
+          </div>
+          <div class="col-lg-4 col-xl-4">
+            <img src="IMG_0590.jpg" width="300px" alt="photo of me"><br>
+            <h9><i>taken by <a href="https://www.instagram.com/juatabot">Heng Juat Tan</a></i></h9>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="main">
-          <a href="programming/index.html">computational design</a>
+    </div>
+
+    <div class="section" id="present">
+      <h1>present</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md col-lg col-xl">
+            <p><b>conference logistics coordinator</b><br>@<a href="https://web.northeastern.edu/scout/" target="_blank">Scout Design Studio</a> // since Sep 2018</p>
+            <p>source speakers from global design community for Scout’s 2nd annual design conference, Interventions. establish Scout Interventions brand and 2019 theme with conference team of 5.</p>
+          </div>
+          <div class="col-md col-lg col-xl">
+            <p><b>events specialist</b><br>@<a href="https://nuscimag.com/" target="_blank">NU Sci</a> // since Sep 2018</p>
+            <p>coordinate NU Sci's events and issue distribution with the Marketing Team. manage Facebook, Instagram, and Twitter accounts for magazine outreach across Boston science community.</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="main">
-          <a href="photography.html">photography</a>
+
+      <p><b>host</b><br><a href="#filmfest">film fests / movie nights</a> // since high school</p>
+      <p>i've hosted informal movie nights since high school because i love gathering people and meeting new people (friends bring new friends!). it's not the best social type of event because we're watching a screen, but it's still fun to experience a visual
+        adventure together. i usually invite random people and encourage people to get out of their comfort zone / usual friend groups to meet others. i also love short films, which i first started watching through <a href="https://www.shortoftheweek.com"
+          target="_blank">shortoftheweek.com</a> in 2014. i'm currently combining my interest in short films and my movie nights to bring to Boston a biweekly short film festival.</p>
+
+      <p>interests:<br><i>technology and possibility, travel and exploration, hacker/maker communities and collaboration. adventure, photography, short films, animal welfare, healthcare, tennis, swimming.</i></p>
+    </div>
+
+    <div class="section" id="adventures">
+      <h1>adventures</h1>
+      <p>Washington, D.C., US | Oct 5–8 | with: <a href="https://www.instagram.com/juatabot">Heng Juat Tan</a></p>
+      <p>a recent trip to D.C. during Columbus Day Weekend. photos of me taken by Juat, rest are taken by me.</p>
+      <div class="row">
+        <div class="column">
+          <img src="IMG_0283.jpg" style="width:100%">
+          <img src="IMG_0380.jpg" style="width:100%">
+          <img src="IMG_0436.jpg" style="width:100%">
+          <img src="IMG_1033.jpg" style="width:100%">
+          <img src="NKN_0978.jpg" style="width:100%">
+        </div>
+        <div class="column hide3">
+          <img src="NKN_1209.jpg" style="width:100%">
+          <img src="IMG_0514.jpg" style="width:100%">
+          <img src="IMG_0590.jpg" style="width:100%">
+          <img src="IMG_0729.jpg" style="width:100%">
+          <img src="NKN_1100.jpg" style="width:100%">
+        </div>
+        <div class="column hide2">
+          <img src="IMG_0738.jpg" style="width:100%">
+          <img src="IMG_0870.jpg" style="width:100%">
+          <img src="IMG_0939.jpg" style="width:100%">
+          <img src="IMG_1003.jpg" style="width:100%">
+          <img src="IMG_0983.jpg" style="width:100%">
+        </div>
+        <div class="column hide2">
+          <img src="NKN_0618.jpg" style="width:100%">
+          <img src="NKN_0721.jpg" style="width:100%">
+          <img src="NKN_0783.jpg" style="width:100%">
+          <img src="NKN_0922.jpg" style="width:100%">
+          <img src="NKN_1081.jpg" style="width:100%">
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="main">
-          <a href="oops.html">traditional art</a>
+      <!--
+      <p>Trip mainly for photography; walked around with cameras. i had been to D.C. once before in __ on family vacation. i just remember then, there were cherry blossoms because it was spring. Juat's been to D.C. __. i used Juat's Nikon 3400 and he borrowed
+        a __ from the Northeastern University Photo Lab.</p>
+-->
+      <a href="bucket.html">bucket list</a>
+    </div>
+
+    <div class="section" id="thanks">
+      <h1>shoutouts</h1>
+      <p><a href="https://www.christinaallan.com" target="_blank">CHRISTINA ALLAN</a> FOR BRINGING HER DELICIOUS HOMEMADE OATMEAL CHOCOLATE CHIP COOKIES TO SCOUT HQ</p>
+      <p>MY BEST FRIEND JAMIE GUO FOR ALWAYS BEING THERE FOR ME</p>
+    </div>
+
+    <div class="section" id="ideas">
+      <h1>ideas</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md col-lg col-xl">
+            <p>to think about</p>
+            <ul>
+              <li><img src="potatoheadq.jpg" height="230px"></li>
+            </ul>
+          </div>
+          <div class="col-md col-lg col-xl">
+            <p>for fun</p>
+            <ul>
+              <li>taking a photo of each street named after a state in Washington, D.C.</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="main">
-          <a href="oops.html">events</a>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="main highlight">
-          <a href="TzengKarisa_Resume.pdf" download>resume</a>
-        </div>
-      </div>
+    </div>
+
+    <div class="section" id="filmfest">
+      <h1>film fest</h1>
+      <p>text "filmfest" to 857-701-8975 for updates</p>
+      <p>Karisa's Fall (Short) Film Fest Fridays<br>Boston, MA, US | Oct – Dec 2018 </p>
+      <p>next: Oct 26<br>focusing on CREATIVE STYLE: animation, stop-motion, etc.</p>
+      <p>location, further details tba</p>
     </div>
   </div>
 
   <!-- FOOTER -->
-  <div class="container contact">
-    <div class="row">
-      <div class="col">
-        <a href="https://linkedin.com/in/karisatzeng" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> |
-        <!--        <a href="https://behance.com/karisatzeng" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a> |
-        <a href="https://dribbble.com/karisa" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a> | -->
-        <a href="https://facebook.com/karisatzeng" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> |
-        <a href="https://instagram.com/karisatzeng" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> |
-        <a href="https://medium.com/@karisa" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
-        <!--        <a href="https://twitter.com/karisatzeng" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> |
-        <a href="https://vimeo.com/karisa" target="_blank"><i class="fa fa-vimeo" aria-hidden="true"></i></a> -->
-      </div>
-    </div>
+  <div id="footer">
+    <p><br>----<br>typeface: <a href="https://fonts.google.com/specimen/Alegreya" target="_blank">Alegreya</a></p>
+    <a href>back to top</a>
   </div>
 </body>
 
