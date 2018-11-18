@@ -64,7 +64,6 @@
 
     .section {
       width: 100%;
-      margin-bottom: 30px;
     }
 
     .row {
@@ -143,6 +142,27 @@
     figcaption {
       font-size: 14px;
     }
+
+    .scrolling-wrapper {
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+
+    .card {
+      vertical-align: top;
+      display: inline-block;
+      border-style: none;
+    }
+
+    .middle {
+      padding-right: 4px;
+    }
   </style>
 </head>
 
@@ -181,7 +201,7 @@
             <ul>
               <li>Thanksgiving weekend-- will be in NJ for 5 days, longest stay in my home state of NJ since March</li>
               <li>turning 20 very soon</li>
-              <li>warmer climates-- thinking of moving back to the Bay Area in January</li>
+              <li>warmer climates-- thinking of moving to Santa Clara in January</li>
               <li><a href="#filmfest">Karisa's Fall (Short) Film Fest Friday</a> (on Nov 30!)</li>
             </ul>
 
@@ -210,42 +230,42 @@
     <div class="section" id="adventures">
       <h1>adventures</h1>
       <p>Boston, MA, US | Nov 2–3 | with: <a href="http://www.illuminusboston.org/" target="_blank">Illuminus Boston team and artists</a></p>
-      <p>my second year volunteering at and attending Illuminus Boston.</p>
-      <div class="row">
-        <div class="column">
+      <p>my second year volunteering at and attending Illuminus Boston. photo of me at <i>Heart Hug</i> taken by fellow volunteer and new friend, <a href="https://yanwendi.me/" target="_blank">Wendi</a>.</p>
+      <div class="scrolling-wrapper">
+        <div class="card middle">
           <figure>
-            <img src="stranger.jpg" alt="lighting up Heart Hug with a stranger" style="width:100%">
-            <figcaption>lighting up Heart Hug with a stranger</figcaption>
+            <img src="stranger.jpg" alt="lighting up Heart Hug with a stranger" style="height:434px">
+            <figcaption>lighting up <i>Heart Hug</i> with a stranger</figcaption>
           </figure>
         </div>
-        <div class="column hide3">
+        <div class="card middle">
           <figure>
-            <video width="100%" alt="chilling in Insound with one of the artists" controls>
+            <video height="434px" alt="chilling in Insound with one of the artists" controls>
             <source src="drewandre.mp4" type="video/mp4">
           </video>
-            <figcaption>chilling in Insound with artist Drew André</figcaption>
+            <figcaption>chilling in <i>Insound</i> with artist <a href="https://www.drew-andre.com/" target="_blank">Drew André</a></figcaption>
           </figure>
         </div>
-        <div class="column hide2">
+        <div class="card middle">
           <figure>
-            <video width="100%" alt="managing the line for Antipode" controls>
+            <video height="434px" alt="managing the line for Antipode" controls>
             <source src="antipode.mp4" type="video/mp4">
           </video>
-            <figcaption>managing the line for Antipode</figcaption>
+            <figcaption>managing the line for <i>Antipode</i></figcaption>
           </figure>
         </div>
-        <div class="column hide2">
+        <div class="card">
           <figure>
-            <img src="strength.jpg" alt="watching 'My Name Translated is Strength'" style="width:100%">
-            <figcaption>watching My Name Translated is Strength</figcaption>
+            <img src="strength.jpg" alt="watching 'My Name Translated is Strength'" style="height:434px">
+            <figcaption>watching <i>My Name Translated is Strength</i></figcaption>
           </figure>
         </div>
       </div>
 
-      <p><br><a href="archives.html#adventures">past adventures</a></p>
-      <p>Referral programs to save money on your next trip (new accounts only):
+      <p><a href="archives.html#adventures">past adventures</a></p>
+      <p>referral programs to save money on your next trip (new accounts only):
         <br>Airbnb, $40 off | Turo, $20 off
-        <br>Just say hi for my referral links!</p>
+        <br>just say hi for my referral links!</p>
     </div>
 
     <div class="section" id="thanks">
@@ -294,7 +314,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 

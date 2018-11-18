@@ -143,6 +143,28 @@
     figcaption {
       font-size: 14px;
     }
+
+    .scrolling-wrapper {
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+
+    .card {
+      background: transparent;
+      vertical-align: top;
+      display: inline-block;
+      border-style: none;
+    }
+
+    .middle {
+      padding-right: 4px;
+    }
   </style>
 </head>
 
@@ -167,30 +189,31 @@
       <p>Plymouth, NH, US | Oct 19–21 | with: <a href="https://web.northeastern.edu/scout/" target="_blank">Scout Design Studio</a></p>
       <p>a recent team retreat to New Hampshire. i helped organize this trip! all-team group photo taken by <a href="https://www.emkanch.com/" target="_blank">Emma Kanchanawat</a>, TV Dinner Fam photo taken by <a href="https://www.instagram.com/camaryn_alejandra/"
           target="_blank">Camaryn McKenzie</a>, rest are taken by me.</p>
-      <div class="row">
-        <div class="column">
+
+      <div class="scrolling-wrapper">
+        <div class="card middle">
           <figure>
-            <img src="scretreat2018/collage.jpg" style="width:100%">
+            <img src="scretreat2018/collage.jpg" style="height:434px">
             <figcaption>collaging for our Conference brand</figcaption>
           </figure>
         </div>
-        <div class="column hide3">
+        <div class="card middle">
           <figure>
-            <img src="scretreat2018/uphill.jpg" style="width:100%">
+            <img src="scretreat2018/uphill.jpg" style="height:434px">
             <figcaption>exploring our Airbnb backyard</figcaption>
           </figure>
         </div>
-        <div class="column hide2">
+        <div class="card middle">
           <figure>
-            <video width="100%" alt="hike waterfall" controls>
+            <video height="434px" alt="hike waterfall" controls>
               <source src="scretreat2018/waterfall.mp4" type="video/mp4">
               </video>
             <figcaption>hiking to Rainbow Falls</figcaption>
           </figure>
         </div>
-        <div class="column hide2">
+        <div class="card">
           <figure>
-            <img src="scretreat2018/tvdinner.jpg" style="width:100%">
+            <img src="scretreat2018/tvdinner.jpg" style="height:434px">
             <figcaption>dining well</figcaption>
           </figure>
         </div>
