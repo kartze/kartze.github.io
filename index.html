@@ -20,7 +20,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
-  <script src="https://use.fontawesome.com/c09c774f35.js"></script>
   <link rel="icon" href="favicon.ico">
 
   <!-- STYLE -->
@@ -34,8 +33,21 @@
       padding-left: 25px;
     }
 
+    div {
+      display: block;
+    }
+
+    figcaption {
+      font-size: 14px;
+    }
+
     .section {
       margin: 0;
+      width: 100%;
+    }
+
+    .container {
+      margin-left: 0;
     }
 
     .col,
@@ -52,122 +64,16 @@
       margin-left: -25px;
     }
 
-    .container {
-      margin-left: 0;
-    }
-
-    #quiet {
+    #nav ul {
       text-decoration: none;
       list-style: none;
       padding: 0;
     }
 
-    .section {
-      width: 100%;
-    }
-
-    .row {
-      display: -ms-flexbox;
-      /* IE10 */
-      display: flex;
-      -ms-flex-wrap: wrap;
-      /* IE10 */
-      flex-wrap: wrap;
-    }
-
-    .column {
-      -ms-flex: 25%;
-      /* IE10 */
-      flex: 25%;
-      max-width: 25%;
-      padding: 0 4px;
-    }
-
-    .column img {
-      margin-bottom: 8px;
-      vertical-align: middle;
-    }
-
-    /* Responsive layout - makes a two column-layout instead of four columns */
-
-    @media screen and (max-width: 800px) {
-      .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-      }
-    }
-
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-    @media screen and (max-width: 600px) {
-      .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-      }
-    }
-
-    @media (max-width: 800px) {
-      .hide2 {
-        display: none;
-      }
-    }
-
-
-    @media (max-width: 600px) {
-      .hide3 {
-        display: none;
-      }
-    }
-
-    div {
-      display: block;
-    }
-
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .verticalline {
+    #verticalline {
       padding-left: 10px;
       margin-left: 5px;
       border-left: 1px solid black;
-    }
-
-    figcaption {
-      font-size: 14px;
-    }
-
-    .scrolling-wrapper {
-      overflow-x: scroll;
-      white-space: nowrap;
-      width: 100%;
-    }
-
-    .scrolling-wrapper::-webkit-scrollbar {
-      width: 0px;
-      background: transparent;
-    }
-
-    .card {
-      vertical-align: top;
-      display: inline-block;
-      border-style: none;
-    }
-
-    .middle {
-      padding-right: 4px;
     }
   </style>
 </head>
@@ -176,13 +82,12 @@
   <p style="font-size: 14px"><br>// not traditional, nor a design portfolio. welcome!</p>
 
   <!-- NAVBAR -->
-  <div class=" nav">
-    <ul id="quiet">
+  <div id="nav">
+    <ul>
       <li><a href="#about">about</a></li>
       <li><a href="#values">values</a></li>
       <li><a href="#interests">interests</a></li>
-      <li><a href="#adventures">adventures</a>
-        <!-- | <a href="bucket.html">bucket</a> --></li>
+      <li><a href="#adventures">adventures</a></li>
       <li><a href="#thanks">thanks</a></li>
       <li><a href="#ideas">ideas</a></li>
       <li><a href="filmfest">next film fest: TBA</a></li>
@@ -206,7 +111,11 @@
 
             <p>i'm excited for:</p>
             <ul>
-              <li><a href="https://www.facebook.com/donate/752895668399750/" target="_blank">fundraising for American Red Cross</a>-- raised $140 as of 12/01<br><a href="https://goo.gl/forms/9XEfUcdoHZIXBYRS2" target="_blank">which nonprofits do you support?</a></li>
+              <li><a href="https://www.facebook.com/donate/752895668399750/" target="_blank">fundraising for American Red Cross</a>-- raised $250 as of 12/01<br><a href="https://goo.gl/forms/9XEfUcdoHZIXBYRS2" target="_blank">which nonprofits do you support?</a></li>
+              <li><a href="https://www.facebook.com/events/705143399871531/" target="_blank">Kamayan 2018</a> on 12/01-- supporting friends from Northeastern University's Barkada and the rest of Boston's student Filipino community</li>
+              <li><a href="https://www.facebook.com/events/1233556510125867/" target="_blank">Dance 4 Me 2018</a> on 12/02-- supporting friends dancing with Barkada, UTSAV, VSA, ASU, KASA, and others! all proceeds of the show go to <a href="https://barcc.org/"
+                  target="_blank">Boston Area Rape Crisis
+                Center</a></li>
               <li>worldwide book exchange for the holidays-- contact me for details</li>
               <li><a href="#filmfest">Karisa's FINAL Fall (Short) Film Fest TBA</a></li>
             </ul>
@@ -227,13 +136,16 @@
 
     <div class="section" id="interests">
       <h1>interests</h1>
-      <p>technology and possibility, travel and exploration, community and collaboration.<br>adventure, short films, photography, tennis, swimming.</p>
+      <p>
+        <nobr>adventure and experience,</nobr>
+        <nobr>technology and possibility,</nobr>
+        <nobr>community and collaboration.</nobr><br>short films, photography, oil painting, tennis, swimming.</p>
     </div>
 
     <div class="section" id="adventures">
       <h1>adventures</h1>
       <figure>
-        <img src="NKN_0265.jpg" alt="me sitting between the city and the suburbs" style="height:434px">
+        <img src="NKN_0265.jpg" alt="me sitting between the city and the suburbs" style="width:100%; max-width:651px">
         <figcaption>taken by <a href="https://instagram.com/juatabot/">Juat Tan</a></figcaption>
       </figure>
       <p><a href="archives.html#adventures">past adventures</a></p>
@@ -243,17 +155,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-xl-7">
-
             <h1>thanks</h1>
             <p>
               <nobr>Jamie Guo,</nobr>
               <nobr>Nikita Dsouza,</nobr>
               <nobr>Prateek Kavadia,</nobr>
+              <nobr>Jim Amatucci,</nobr>
+              <nobr>Aidan Fitzgerald,</nobr>
+              <nobr>Oscar Chen,</nobr>
               <nobr>John Kim,</nobr>
               <nobr>Sarah Di,</nobr>
-              <nobr>Oscar Chen,</nobr>
-              <nobr>Aidan Fitzgerald,</nobr>
-              <nobr>Jim Amatucci,</nobr>
               <nobr>Brian Zhu,</nobr>
               <nobr>Matthew Chou,</nobr>
               <nobr>Kevin Chau,</nobr>
@@ -268,10 +179,12 @@
               <nobr>Christina Allan,</nobr>
               <nobr>Victor Silva,</nobr>
               <nobr>Dori Mazor,</nobr>
+              <nobr>Andrew at Farmer Horse,</nobr>
               <nobr>Ray Huang,</nobr>
               <nobr>Tou Kan,</nobr>
-              <nobr>Matthew Seh,</nobr>
-              <nobr>Roger Chen,</nobr> and many many <i>many</i> others
+              <nobr>Sixten Abbot,</nobr>
+              <nobr>Matthew Seh,</nobr> and
+              <nobr>many many <i>many</i> others</nobr>
               <nobr>❤️❤️❤️</nobr>
             </p>
           </div>
@@ -303,7 +216,7 @@
           <div class="col-lg-7 col-xl-7">
             <p>text "filmfest" to 857-701-8975 to keep in the loop</p>
             <p>Karisa's Fall (Short) Film Fest Fridays<br>Boston, MA, US | Oct – Dec 2018 </p>
-            <div class="verticalline">
+            <div id="verticalline">
               <p><b>call for local Boston filmmakers, share your work!</b></p>
               <p>FINAL: <b>369 Huntington Ave</b> | <b>details TBA</b></p>
             </div>
