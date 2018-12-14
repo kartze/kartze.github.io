@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CONNECTED | synopsis</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
+</head>
+
+<body>
+  <div class="nav">
+    <ul id="left">
+      <li><a href="index.html">CONNECTED</a></li>
+    </ul>
+    <ul id="right">
+      <li><a href="connect.html" style="font-family: 'Dawning of a New Day'; font-size: 28px; margin-top: -16px; margin-bottom: -30px;">let's connect</a></li>
+      <li><a href="synopsis.html" class="active">SYNOPSIS</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="index.html">PLAY</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <p>I was inspired by specific experiences of myself and others in using social media to stay in touch over long distances.
+      <br><br>----
+      <br><br>INTRO
+      <br><br>narrator (voiceover): <i>I'm always on the go, and my home is in people, not places.</i>
+      <br><br>submit your name (optional) or click anywhere on screen to continue
+      <br><br>SCENE 1 - 2009
+      <br><br>narrator: <i>I lived in Shanghai for the summer. Twelve hours apart, my best friend and I wrote long choose-your-own adventure stories back and forth over email. I'm not sure how I also played Zynga Poker with her a few times over Facebook, because Facebook is blocked in China.</i>
+      <br><br>contained Gmail environment to click and read through past email chains
+      <br><br>click the arrow to continue when you are done exploring
+      <br><br>SCENE 2 - 2012
+      <br><br>narrator: <i>I was using Gmail's GChat extensively in middle school with my best friend and a few more friends. My world grew-- going from elementary school to middle school, I just met more people.</i>
+      <br><br>contained Gmail environment to click and read through recent messages on GChat
+      <br><br>click the arrow to continue when you are done exploring
+      <br><br>SCENE 3 - 2015
+      <br><br>narrator: <i>I would have Facebook open all the time in high school because everyone there had an account. I was connected to a huge community that included past students as well. My tens of Facebook friends from middle school grew exponentially-- I was in the tens of thousands by the end of high school.
+        <br><br> My world now included people not just in school, but all over the county and country, as well as others that I met through extracurricular activities.</i>
+      <br><br>contained Facebook environment to click and read through; can shift tabs to view contained Gmail environment, where I still talk to best friend through GChat
+      <br><br>click the arrow to continue when you are done exploring
+      <br><br>SCENE 3 - 2017
+      <br><br>narrator: <i>In the summer before university, I was using Facebook to meet new schoolmates and find a new roommate. The Facebook group was very active, with incoming first years introducing themselves in posts. I started chatting with someone whose post I liked; they would become my first year roommate.</i>
+      <br><br>contained Facebook environment to click and read through the Class of 2021 university group; can click and read through recent messages on Messenger chatboxes; can shift tabs to view contained Gmail environment, where I still talk to best
+      friend through GChat
+      <br><br>click the arrow to continue when you are done exploring
+      <br><br>SCENE 4 - 2018
+      <br><br>narrator: <i>Not everyone uses Facebook in this large university. A good amount do use Messenger though. My closest friends are everywhere in the world and I rely more and more on social media to keep in touch. The number of connections I have over Facebook has reached 2000, with people that I've met in school, at events, in cafes, etc. I am okay, I am connected.</i>
+      <br><br>contained Facebook environment to click and read through; can click and read through recent messages on Messenger chatboxes; can shift tabs to view contained Gmail environment, where I still talk to best friend through GChat
+      <br><br>click the arrow to continue when you are done exploring
+      <br><br>SCENE 5 - 2019
+      <br><br>narrator: <i>I'm always on the go and I miss some people. Personally, I've sucked at keeping in touch with most-- chatting takes up a lot of effort. I do my work and focus on hanging out with people around me, even though I don't know them as well and I'm about to leave this city again. I'm scrolling through my chat lists... I want to reach out to someone... but is there anyone I really feel like connecting with?</i>
+      <br><br>watch short video; deactivate Facebook account temporarily and only open GChat with best friend
+      <br><br>END
+      <br><br>narrator: <i>Social media has its pros and cons. Lately, there seems to have been a lot of backlash on social media and a drive for people to delete their accounts and stay offline. I agree and do a hard disconnect now and then. However, I do believe that the ability to stay connected with the few people that I truly care about outweighs the cons. It is up to us on how we use social media-- it is a tool that helps shape society but also is shaped by the communities that use it in return.
+        <br><br> How do you stay connected? Do you consider both the pros and cons specific to this age of new media? And if you are a fellow designer or creator in this space, how does your work encourage true connection between real people?</i>
+      <br><br>click to either replay or let's connect
+    </p>
+  </div>
+
+  <div class="footer">
+    <ul id="left">
+      <li><a href="">artf 2223 neu fall 2018</a></li>
+    </ul>
+    <ul id="right">
+      <li><a id="fullscreen">fullscreen</a></li>
+      <script>
+        function toggleFullscreen(elem) {
+          elem = elem || document.documentElement;
+          if (!document.fullscreenElement && !document.mozFullScreenElement &&
+            !document.webkitFullscreenElement && !document.msFullscreenElement) {
+            if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+              elem.msRequestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+              elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+              elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+          } else {
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            } else if (document.msExitFullscreen) {
+              document.msExitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+              document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) {
+              document.webkitExitFullscreen();
+            }
+          }
+        }
+        document.getElementById('fullscreen').addEventListener('click', function() {
+          toggleFullscreen();
+        });
+      </script>
+      <li><a onClick="soundToggle();" id="soundToggle">sound on</a></li>
+      <script>
+        function soundToggle() {
+          if (document.getElementById('soundToggle').innerText == "sound on") {
+            document.getElementById('soundToggle').innerText = "sound off";
+          } else document.getElementById('soundToggle').innerText = "sound on";
+        }
+      </script>
+    </ul>
+  </div>
+</body>

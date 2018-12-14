@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CONNECTED | about</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
+</head>
+
+<body>
+  <div class="nav">
+    <ul id="left">
+      <li><a href="index.html">CONNECTED</a></li>
+    </ul>
+    <ul id="right">
+      <li><a href="connect.html" style="font-family: 'Dawning of a New Day'; font-size: 28px; margin-top: -16px; margin-bottom: -30px;">let's connect</a></li>
+      <li><a href="synopsis.html">SYNOPSIS</a></li>
+      <li><a href="about.html" class="active">ABOUT</a></li>
+      <li><a href="index.html">PLAY</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <p>CONNECTED invites you to explore the nuances of online social connectivity through an interactive web experience that reproduces several social media platforms. Social media has a huge societal impact today as it is the most used tool for staying
+      connected 24/7 with friends, family, and others. Exploring the quality of these connections is essential while our society continues to utilize these tools.
+      <br><br> As a designer in the age of new media, I have thought extensively on the effects of my and others' work. The Internet gives everyone the power to reach a worldwide audience instantly, and it is so much easier now to impact the world for
+      better or for worse. Before transitioning into design, I was a frequent hackathon developer; I was excited, as most in society were, by the rise of new apps, and especially supported fellow creators of tools for community connectivity. A typical
+      one-sentence pitch might start as, "Tinder for…" and a new app for connecting artists, for example, would appear. Through my early developer work ranging from a website that connects hackers to an app that syncs video between viewers, my interest
+      in fostering and building communities via the power of the Internet shows.
+      <br><br> However, initial excitement wore away as I took my creative efforts more seriously— what are long-term goals? And as I began personally distancing myself from devices to focus on the present real world— are we getting addicted to the screen?
+      What do my projects say about how society is today and might be tomorrow? Naive creators focus on making an app’s experience "engaging", i.e. addicting. We must recognize the importance of experiences that connect society off the screen and foster
+      in-person communities.
+      <br><br> CONNECTED is essentially an isolated individual experience that requires focus on the screen. It's art that explores social media such as Facebook and aims to raise questions, rather than a designed tool that attempts to solve problems.
+      Through this, I want you to carefully consider our new media society before you create works of the latter.
+    </p>
+  </div>
+
+  <div class="footer">
+    <ul id="left">
+      <li><a href="">artf 2223 neu fall 2018</a></li>
+    </ul>
+    <ul id="right">
+      <li><a id="fullscreen">fullscreen</a></li>
+      <script>
+        function toggleFullscreen(elem) {
+          elem = elem || document.documentElement;
+          if (!document.fullscreenElement && !document.mozFullScreenElement &&
+            !document.webkitFullscreenElement && !document.msFullscreenElement) {
+            if (elem.requestFullscreen) {
+              elem.requestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+              elem.msRequestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+              elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+              elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+          } else {
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            } else if (document.msExitFullscreen) {
+              document.msExitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+              document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) {
+              document.webkitExitFullscreen();
+            }
+          }
+        }
+        document.getElementById('fullscreen').addEventListener('click', function() {
+          toggleFullscreen();
+        });
+      </script>
+      <li><a onClick="soundToggle();" id="soundToggle">sound on</a></li>
+      <script>
+        function soundToggle() {
+          if (document.getElementById('soundToggle').innerText == "sound on") {
+            document.getElementById('soundToggle').innerText = "sound off";
+          } else document.getElementById('soundToggle').innerText = "sound on";
+        }
+      </script>
+    </ul>
+  </div>
+</body>
