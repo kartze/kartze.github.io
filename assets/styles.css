@@ -1,0 +1,168 @@
+body {
+  margin: 5% 15% 5% 10%;
+  font-family: 'Poppins', sans-serif;
+}
+
+#name {
+  font-family: 'Alegreya', serif;
+  color: #e55039;
+  font-size: 40px;
+}
+
+h1 {
+  font-family: 'Alegreya', serif;
+  text-transform: lowercase;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-left: 0;
+}
+
+div #casestudy p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 26px;
+}
+
+ul {
+  padding-left: 25px;
+}
+
+li p {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+div {
+  display: block;
+}
+
+figcaption {
+  font-size: 14px;
+}
+
+.col,
+.col-lg,
+.col-xl,
+.col-lg-4,
+.col-xl-4,
+.col-lg-5,
+.col-xl-5,
+.col-lg-6,
+.col-xl-6,
+.col-lg-7,
+.col-xl-7,
+.col-lg-8,
+.col-xl-8 {
+  padding: 0px;
+  padding-right: 28px;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .projectdesc {
+    padding-left: 20px;
+  }
+}
+
+#nav ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+#verticallinesection {
+  padding-left: 10px;
+  margin-left: 5px;
+  border-left: 1px solid black;
+}
+
+@media screen and (min-width: 992px) {
+  .fixed-area {
+    position: fixed;
+    width: 320px;
+    height: 60px;
+  }
+
+  .fixed-footer {
+    position: fixed;
+    left: 10%;
+    bottom: 5%;
+    width: 320px;
+  }
+}
+
+#placeholder {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.lightbox-img {
+  margin-bottom: 5px;
+}
+
+.lightbox-img:hover {
+  border: 1px solid grey;
+}
+
+.lightbox-img-single {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.phone {
+  border: 40px solid #ddd;
+  border-width: 55px 7px;
+  border-radius: 40px;
+  margin: 50px auto;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  width: 325px;
+  height: 665px;
+}
+
+.phone iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.phone.view {
+  box-shadow: 0px 3px 0 #BBB, 0px 4px 0 #BBB, 0px 5px 0 #BBB, 0px 7px 0 #BBB, 0px 10px 20px #666;
+}
