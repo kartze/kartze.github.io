@@ -128,10 +128,11 @@
             <li>Directional and orientational</li>
           </ul>
         </p>
-        <a href="https://xd.adobe.com/embed/f9e55599-34b8-4cb0-7f07-64c35dea021a-8fd4/" target="prototype" onclick="document.getElementById('iframe_a').onload = function();">Click here to load interactive prototype:</a>
 
         <div class="phone view" id="phone">
-          <iframe name="prototype" width="375" height="667" frameborder="0"></iframe>
+          <a href='javascript:void(0);' onclick="load_iframe();">
+            <img src="your-tour-nu/start.png" width=100% height=100%>
+          </a>
         </div>
 
         <a href="your-tour-nu/wireframes.jpg" data-toggle="lightbox">
@@ -195,6 +196,12 @@
   </div>
 
   <!-- jQuery and Bootstrap JS -->
+  <script>
+    function load_iframe() {
+      $('#phone').html(`<iframe width="375" height="667" src="https://xd.adobe.com/embed/f9e55599-34b8-4cb0-7f07-64c35dea021a-8fd4/" frameborder="0" allowfullscreen></iframe>`);
+      return false;
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <!-- Ekko LightBox plugin for modal image galleries -->
