@@ -61,9 +61,7 @@ div #casestudy p {
   margin-bottom: 26px;
 }
 
-#casestudy {
-  text-align: center;
-}
+#casestudy {}
 
 #casestudy .subheader {
   width: 85%;
@@ -123,6 +121,7 @@ figcaption {
 }
 
 #verticallinesection {
+  text-align: left;
   padding-left: 10px;
   margin-left: 5px;
   border-left: 1px solid black;
