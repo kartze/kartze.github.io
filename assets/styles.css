@@ -14,3 +14,39 @@ p {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
+
+a {
+  color: black;
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.underline:hover {
+  color: gold;
+  text-decoration: none;
+}
+
+.underline:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  bottom: 0;
+  background: gold;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
