@@ -80,33 +80,30 @@ div.sticky {
 
 /* Content */
 .content {
-  min-height: 155px;
+  min-height: 200px;
   background-color: #ecf0f1;
   text-align: left;
   position: relative;
 }
 
-.thumbnail_txt {
+.content p {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 88%;
   left: 0;
   right: 0;
-  padding: 20px;
+  padding-left: 6px;
+  padding-top: 1px;
   color: black;
-  visibility: hidden;
-  opacity: 0;
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+  background-color: white;
+  opacity: .6;
 }
 
-.content:hover .thumbnail_img {
-  opacity: 30%;
+.content:hover {
+  opacity: 80%;
 }
 
-.content:hover .thumbnail_txt {
-  visibility: visible;
-  opacity: 1;
+.content:hover p {
+  opacity: .9;
 }
 
 /* The "show" class is added to the filtered elements */
