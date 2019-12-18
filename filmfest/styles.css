@@ -1,0 +1,126 @@
+body {
+  margin: 5% 15% 5% 10%;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.desc {
+  width: 320px;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.row {
+  margin: 0px -16px;
+  max-width: 1000px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+/* For mobile phones: */
+.column {
+  float: left;
+  width: 100%;
+  max-width: 320px;
+  display: none;
+  /* Hide all elements by default */
+}
+
+/* Create two equal columns that floats next to each other */
+@media only screen and (min-width: 600px) {
+
+  /* For tablets: */
+  .column {
+    float: left;
+    width: 50%;
+    max-width: 320px;
+    display: none;
+  }
+}
+
+/* Create three equal columns that floats next to each other */
+@media only screen and (min-width: 768px) {
+
+  /* For desktop: */
+  .col-4 {
+    float: left;
+    width: 33.33%;
+    max-width: 320px;
+    display: none;
+  }
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  min-height: 155px;
+  background-color: #ecf0f1;
+  text-align: left;
+  position: relative;
+}
+
+.thumbnail_txt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.content:hover .thumbnail_img {
+  opacity: 30%;
+}
+
+.content:hover .thumbnail_txt {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+.btn {
+  background: none !important;
+  border: none;
+  outline: none;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.btn.active {
+  color: #e55039;
+}
