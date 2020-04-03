@@ -1,195 +1,77 @@
-body {
-  margin: 5% 15% 5% 10%;
-  font-family: 'Poppins', sans-serif;
+html {
+  font-family: 'Sen', sans-serif;
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+  max-width: 30%;
+  min-width: 300px;
 }
 
-a {
-  color: black;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.desc {
-  width: 320px;
-}
-
-div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+.menu {
+  left: -800px;
+  top: -800px;
+  width: 25%;
+  height: 50%;
+  min-width: 500px;
+  min-height: 500px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 3;
   background-color: white;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  z-index: 1;
-  line-height: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 250px;
+  padding-left: 250px;
 }
 
-.row {
-  margin: 0px -16px;
-  max-width: 1000px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row>.column {
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 16px;
-}
-
-/* For mobile phones: */
-.column {
-  float: left;
-  width: 100%;
-  max-width: 320px;
-  display: none;
-  /* Hide all elements by default */
-}
-
-/* Create two equal columns that floats next to each other */
-@media only screen and (min-width: 600px) {
-
-  /* For tablets: */
-  .column {
-    float: left;
-    width: 50%;
-    max-width: 320px;
-    display: none;
-  }
-}
-
-/* Create three equal columns that floats next to each other */
-@media only screen and (min-width: 768px) {
-
-  /* For desktop: */
-  .col-4 {
-    float: left;
-    width: 33.33%;
-    max-width: 320px;
-    display: none;
-  }
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  min-height: 200px;
-  background-color: #ecf0f1;
-  text-align: left;
-  position: relative;
-}
-
-.content p {
-  position: absolute;
-  bottom: -8%;
-  left: 0;
-  right: 0;
-  padding-left: 6px;
-  padding-top: 1px;
+.menu a {
+  text-decoration: none;
+  font-size: 25px;
   color: black;
-  background-color: white;
-  opacity: .6;
-}
-
-.content:hover {
-  opacity: 80%;
-}
-
-.content:hover p {
-  opacity: .9;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
   display: block;
+  transition: 0.3s;
+  padding-bottom: 20px;
 }
 
-.btn {
-  background: none !important;
-  border: none;
-  outline: none;
-  padding: 0 !important;
+.menu a:hover {
+  color: blue;
+}
+
+.menu .closebtn {
+  font-size: 46px;
+}
+
+@media screen and (max-height: 300px) {
+  .menu {
+  }
+
+  .menu a {
+    font-size: 23px;
+    padding-bottom: 8px;
+  }
+}
+
+#heading {
+  font-size: 5em;
+}
+
+@media screen and (max-width: 800px) {
+  #heading {
+    font-size: 3em;
+  }
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: 2;
   cursor: pointer;
-}
-
-.btn.active {
-  color: #e55039;
-}
-
-.btn {
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.btn:hover {
-  color: gold;
-  text-decoration: none;
-}
-
-.btn:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 0;
-  bottom: 0;
-  background: gold;
-  height: 2px;
-  transition-property: width;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-
-.btn:hover:after,
-.btn:focus:after,
-.btn:active:after {
-  left: 0;
-  right: auto;
-  width: 100%;
-}
-
-.underline {
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.underline:hover {
-  color: gold;
-  text-decoration: none;
-}
-
-.underline:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 0;
-  bottom: 0;
-  background: gold;
-  height: 2px;
-  transition-property: width;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-
-.underline:hover:after,
-.underline:focus:after,
-.underline:active:after {
-  left: 0;
-  right: auto;
-  width: 100%;
 }

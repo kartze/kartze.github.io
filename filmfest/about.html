@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>about | short film fest | karisa tzeng</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+	<link href="filmfeststyles.css" rel="stylesheet">
+	<link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+	<div id="mymenu" class="menu">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">
+			<h2>Short Film Fest</h2>
+		</a>
+		<a onclick="closeNav()">About</a>
+	</div>
+
+	<div id="overlay" onclick="closeNav()"></div>
+
+	<div id="main">
+		<span id="hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&equiv;</span>
+		<h1 id="heading"><span style="color: blue;">About</span> the community</h1>
+		<p>I'm Karisa, and I started this for fun.</p>
+		<p>In 2018, I hosted casual film nights at Northeastern University. In 2020&mdash; who would've seen this coming?&mdash; COVID-19 caused many events to move online. It prompted me to bring back my film fests as a way to bridge people during social isolation, and this time, in a new, virtual format.</p>
+		<p>This community is for everyone&mdash; the curious, enthusiasts, makers, and more.</p>
+		<p>I'll be hosting events and competitions soon.</p>
+
+		<h2>Contact me: <span style="cursor: pointer" onclick="showEmail()" id="email">[show email]</span></h2>
+
+		<p><span style="color: blue;">4/11 - site to be completed</span><br>3/21 - ideation</p>
+	</div>
+
+	<script>
+		function showEmail() {
+			document.getElementById("email").innerHTML = "me@karisatzeng.com";
+		}
+
+		function openNav() {
+			document.getElementById("mymenu").style.left = "-180px";
+			document.getElementById("mymenu").style.top = "-180px";
+			document.getElementById("overlay").style.display = "block";
+		}
+
+		function closeNav() {
+			document.getElementById("mymenu").style.left = "-800px";
+			document.getElementById("mymenu").style.top = "-800px";
+			document.getElementById("overlay").style.display = "none";
+		}
+	</script>
+</body>
+
+</html>
