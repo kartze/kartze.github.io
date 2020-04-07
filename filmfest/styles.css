@@ -59,6 +59,10 @@ p {
   #heading {
     font-size: 3em;
   }
+
+  .menu a {
+    font-size: 1.2em;
+  }
 }
 
 #overlay {
