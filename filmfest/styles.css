@@ -1,0 +1,81 @@
+html {
+  font-family: 'Sen', sans-serif;
+}
+
+p {
+  max-width: 30%;
+  min-width: 300px;
+}
+
+.menu {
+  left: -800px;
+  top: -800px;
+  width: 25%;
+  height: 50%;
+  min-width: 500px;
+  min-height: 500px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 3;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 250px;
+  padding-left: 250px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  padding-bottom: 20px;
+}
+
+.menu a:hover {
+  color: blue;
+}
+
+.menu .closebtn {
+  font-size: 46px;
+}
+
+@media screen and (max-height: 300px) {
+  .menu {
+  }
+
+  .menu a {
+    font-size: 23px;
+    padding-bottom: 8px;
+  }
+}
+
+#heading {
+  font-size: 5em;
+}
+
+@media screen and (max-width: 800px) {
+  #heading {
+    font-size: 3em;
+  }
+
+  .menu a {
+    font-size: 1.2em;
+  }
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: 2;
+  cursor: pointer;
+}

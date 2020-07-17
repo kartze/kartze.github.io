@@ -1,0 +1,152 @@
+body {
+  margin: 5%;
+}
+
+.gallery {
+  box-sizing: border-box;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 40px;
+  z-index: 1;
+  line-height: 1;
+}
+
+.row {
+  margin: 0px -16px;
+  max-width: 1500px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 16px;
+}
+
+/* For mobile phones: */
+.column {
+  float: left;
+  width: 100%;
+  max-width: 320px;
+  display: none;
+  /* Hide all elements by default */
+}
+
+/* Create two equal columns that floats next to each other */
+@media only screen and (min-width: 600px) {
+
+  /* For tablets: */
+  .column {
+    float: left;
+    width: 50%;
+    max-width: 320px;
+    display: none;
+  }
+}
+
+/* Create three equal columns that floats next to each other */
+@media only screen and (min-width: 768px) {
+
+  /* For desktop: */
+  .col-4 {
+    float: left;
+    width: 33.33%;
+    max-width: 320px;
+    display: none;
+  }
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  min-height: 200px;
+  background-color: #ecf0f1;
+  text-align: left;
+  position: relative;
+}
+
+.content p {
+  position: absolute;
+  bottom: -8%;
+  left: 0;
+  right: 0;
+  padding-left: 6px;
+  padding-top: 1px;
+  color: black;
+  background-color: white;
+  opacity: .6;
+  max-width: 100%;
+}
+
+.content:hover {
+  opacity: 80%;
+}
+
+.content:hover p {
+  opacity: .9;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+.btn {
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+  background: none !important;
+  border: none;
+  outline: none;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.btn.active {
+  color: #e55039;
+}
+
+.btn {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  color: gold;
+  text-decoration: none;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  bottom: 0;
+  background: gold;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.btn:hover:after,
+.btn:focus:after,
+.btn:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
