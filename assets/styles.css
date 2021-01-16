@@ -1,0 +1,284 @@
+body {
+  margin: 5% 5% 5% 5%;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  background-color: #fcfbf7;
+}
+
+div {
+  display: block;
+}
+
+h1 {
+  color: #e55039;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+h1 a {
+  color: #e55039;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: #e55039;
+  text-decoration: none;
+}
+
+h2 {
+  /* margin-top: 40px; */
+  font-weight: 700;
+  font-size: 48px;
+  /* margin-bottom: 0px; */
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+p {
+  font-weight: 400;
+}
+
+#logo img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+#nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#nav li a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  margin-left: 0;
+  max-width: 4000px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* #main-body {
+  margin-top: 5vh;
+} */
+
+#main-body img {
+  margin-bottom: 18px;
+  max-width: 100%;
+  /* max-width: 1000px; */
+  /* min-width: 320px; */
+}
+
+#main-body h3 {
+  max-width: 600px;
+  min-width: 320px;
+  line-height: 1.5em;
+}
+
+#main-body p, ul, ol {
+  max-width: 600px;
+  min-width: 320px;
+  line-height: 1.5em;
+  margin-bottom: 18px;
+}
+
+.fixed-area {
+  max-width: 320px;
+}
+
+@media screen and (min-width: 992px) {
+  #side {
+    position: fixed;
+    z-index: 1030;
+  }
+  .fixed-area {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 600ms ease-out;
+    will-change: opacity;
+  }
+  .fixed-area.hidden {
+    opacity: 0.2;
+    transition: opacity 600ms ease-out;
+    will-change: opacity;
+  }
+  #main {
+    margin-left: 30%;
+  }
+  #main-body img {
+    margin-bottom: 18px;
+    max-width: 80%;
+    /* max-width: 1000px; */
+    /* min-width: 320px; */
+  }
+  /* #main-body {
+    padding-left: 55px;
+  } */
+  .fixed-footer {
+    position: fixed;
+    left: 5%;
+    bottom: 5%;
+    width: 320px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 600ms ease-out;
+    will-change: opacity;
+  }
+  .fixed-footer.hidden {
+    opacity: 0.2;
+    transition: opacity 600ms ease-out;
+    will-change: opacity;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #main {
+    margin-left: 20%;
+  }
+}
+
+.fadein {
+  opacity: 0;
+  transition: translate(0, 20px);
+  transition: all 1s;
+  margin-top: 5vh;
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.lightbox-img {
+  margin-bottom: 5px;
+}
+
+.lightbox-img:hover {
+  border: 1px solid grey;
+}
+
+.lightbox-img-single {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.phone {
+  border: 40px solid #ddd;
+  border-width: 55px 7px;
+  border-radius: 40px;
+  margin: 50px auto;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  width: 325px;
+  height: 665px;
+}
+
+.phone iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.phone.view {
+  box-shadow: 0px 3px 0 #BBB, 0px 4px 0 #BBB, 0px 5px 0 #BBB, 0px 7px 0 #BBB, 0px 10px 20px #666;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.small {
+  position: relative;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.horizontal {
+  position: relative;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.vertical {
+  position: relative;
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.big {
+  position: relative;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#verticallinesection {
+  text-align: left;
+  padding-left: 10px;
+  margin-left: 5px;
+  border-left: 1px solid black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #312eff;
+}
+
+.horizontal:hover .overlay {
+  opacity: 0.8;
+}
+
+.big:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
