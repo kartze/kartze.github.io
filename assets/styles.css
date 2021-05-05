@@ -142,18 +142,6 @@ p {
   }
 }
 
-.fadein {
-  opacity: 0;
-  transition: translate(0, 20px);
-  transition: all 1s;
-  margin-top: 5vh;
-}
-
-.fadein.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
 .lightbox-img {
   margin-bottom: 5px;
 }

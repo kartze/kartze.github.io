@@ -55,14 +55,14 @@
           </p>
 
           <!-- SECTION: HOMEPAGE -->
-          <div class="fadein">
+          <div>
             <h3>Homepage redesign</h3>
             <p>Working with UX designers, brand designers, and my mentor Preston Brown, I conducted UX research for a series of exciting new designs for the homepage.</p>
             <p>Preston and I designed a research study to assess the designs and then we individually interviewed real users over Zoom using UserTesting’s new moderated feature. We created highlight reels of user interviews and made design recommendations.</p>
           </div>
 
           <!-- SECTION: DIBs -->
-          <div class="fadein">
+          <div>
             <h3>Diversity, Inclusion, and Belonging (DIBs)</h3>
             <p>With my mentor Julie Wildhaber, I worked on content strategy to update the <a href="https://www.servicenow.com/company/diversity-inclusion-belonging.html" target="_blank">Diversity, Inclusion, and Belonging page for 2020</a>. We presented
               the company’s third annual Diversity Report and added new content, including videos and interviews of real employees, as part of a larger brand campaign.</p>
@@ -74,7 +74,7 @@
           </div>
 
           <!-- SECTION: GLOBAL IMPACT -->
-          <div class="fadein">
+          <div>
             <h3>Global Impact</h3>
             <p>I led content strategy for ServiceNow’s <a href="https://www.servicenow.com/company/global-impact/mit-challenge-digital-workforce.html" target="_blank">first Global Impact initiative</a> presented on the company website.</p>
             <p>The Digital Workforce Challenge, co-hosted by MIT Solve, is a worldwide competition promoting innovative solutions for digital literacy. Collaborating with ServiceNow’s Global Impact team, I designed the page with multimedia content and strategized
@@ -86,7 +86,7 @@
           </div>
 
           <!-- SECTION: UX RESEARCH PROGRAM -->
-          <div class="fadein">
+          <div>
             <h3>UX research program</h3>
             <p>I worked with Preston to establish the first UX research program for the team.</p>
             <p>I evaluated UX research tools, including <a href="https://uxdesign.cc/how-i-simplified-my-ux-research-7b587f59543a" target="_blank">Airtable for storing research findings</a>, UserTesting's new moderated testing feature, and <a href="https://www.userzoom.com/"
@@ -94,7 +94,7 @@
           </div>
 
           <!-- SECTION: REFLECTION -->
-          <div class="fadein">
+          <div>
             <h3>Reflection</h3>
             <p>I met my internship goals around personal and professional development, and in leaving some impact. This was my first time working in content strategy and formal UX research; I gained most of my technical skills and knowledge of these fields
               on the job. This was also my first time working in corporate UX, at a mid- to large-sized company. Unlike at previous design environments I've known, UX roles were split on the ServiceNow Digital Design team with many different professionals
@@ -104,7 +104,7 @@
           </div>
 
           <!-- SECTION: MENTORS -->
-          <div class="fadein">
+          <div>
             <h3>Mentors</h3>
             <p>A huge thank you to my mentors, Julie Wildhaber and Preston Brown, as well as the Digital Design team!</p>
           </div>
@@ -158,23 +158,6 @@
     $(".fixed-footer").on('mouseover', function() {
       $(".fixed-footer").removeClass('hidden');
     });
-  </script>
-
-  <!-- Fade in content on scroll -->
-  <script>
-    $(document).on("scroll", function() {
-      var pageTop = $(document).scrollTop();
-      var pageBottom = pageTop + $(window).height();
-      var tags = $(".fadein");
-
-      for (var i = 0; i < tags.length; i++) {
-        var tag = tags[i];
-
-        if ($(tag).position().top + 300 < pageBottom) {
-          $(tag).addClass("visible");
-        }
-      }
-    })
   </script>
 
   <!-- Global Site Tag (gtag.js) - Google Analytics -->

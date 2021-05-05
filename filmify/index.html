@@ -55,19 +55,19 @@
           <p>In the Fall 2020 semester, I led user research, UX strategy, and marketing. I also worked with the other designers on UI and branding.</p>
 
           <!-- SECTION: BACKGROUND -->
-          <div class="fadein">
+          <div>
             <h3>Background</h3>
             <p>I watch many short films and feature films. I especially enjoy the works of Christopher Nolan and Alfred Hitchcock, and I also like to support independent filmmakers, from people I know personally to up-and-coming filmmakers. However, it wasn't
               until chatting with my teammates that I began to consider the diversity of filmmakers, especially as an issue within Hollywood. I realized that most of the feature films I've watched were directed by white, cis men.</p>
           </div>
 
           <!-- SECTION: RESEARCH -->
-          <div class="fadein">
+          <div>
             <h3>User research</h3>
             <p>After Srilekha conducted industry research and we learned that most films that we are exposed to are in fact directed by white, cis men, I led user research to understand how this affects people who watch films and determine our target users.</p>
           </div>
 
-          <div class="fadein">
+          <div>
             <p>Through a survey of 400 responses from friends, family, other students, and multiple film communities and groups over social media, I discovered that people may find diverse representation behind the camera important in general, but not so
               much when it comes to choosing a film to watch.</p>
             <a href="research_user-perception.png" data-toggle="lightbox">
@@ -75,50 +75,50 @@
             </a>
           </div>
 
-          <div class="fadein">
+          <div>
             <p>However, I also discovered that how important one finds diverse representation behind the camera is positively correlated to their interest in a platform that would help them find films by diverse filmmakers to watch.</p>
             <a href="research_user-interest.png" data-toggle="lightbox">
               <img src="research_user-interest.png" class="img-fluid lightbox-img" style="max-height: 70vh;">
             </a>
           </div>
 
-          <div class="fadein">
+          <div>
             <p>Ultimately, I confirmed a user need and interest, as users do not know where to find information about the off-screen diversity of films yet find the issue important and/or of interest.</p>
             <p>For more detailed insights, Natalie and I conducted 4 semi-structured, remote, moderated interviews with people who watch film.</p>
             <p>I then worked with Celine and Srilekha to create personas from the user interview insights. We determined that our target users were film enthusiasts, whose habits were beyond casual film watching for entertainment.</p>
           </div>
 
           <!-- SECTION: DESIGN -->
-          <div class="fadein">
+          <div>
             <h3>UX strategy and design</h3>
             <p>I created a user flow diagram that evolved drastically throughout the design and development process as we better understood our own project. This diagram will guide our work moving forward.</p>
             <!-- <p>At the end of the semester, I established two final, similar diagrams to guide our work moving forward.</p> -->
           </div>
 
-          <div class="fadein">
+          <div>
             <a href="design_userflow-v1.png" data-toggle="lightbox" data-gallery="userflow">
                 <img src="design_userflow-v1.png" class="img-fluid lightbox-img" style="max-height: 70vh;">
               </a>
             <!-- </div>
 
-          <div class="fadein">
+          <div>
             <a href="design_userflow-v2.png" data-toggle="lightbox" data-gallery="userflow">
                 <img src="design_userflow-v2.png" class="img-fluid lightbox-img" style="max-height: 70vh;">
               </a>
           </div>
 
-          <div class="fadein"> -->
+          <div> -->
             <p>There are two main types of users: those who connected their Letterboxd account and those who have not. An unconnected user starts at the homescreen, and can go through a narrative educating them on diversity in the film industry. From there,
               they can connect their Letterboxd and/or provide some other input to receive a diversity analysis of the films they've watched and personalized film recommendations for films directed by diverse filmmakers.</p>
             <!-- <p>The main difference between the two user flows is that Version 1 offers a different homepage/dashboard for users connected to Letterboxd, accounting for any additional content/features we might offer them.</p> -->
           </div>
 
-          <div class="fadein">
+          <div>
             <p>Natalie, Celine, and I designed and iterated on wireframes for the homepage, film detail page, browse/search films page, and about page. We are currently UX testing these designs.</p>
           </div>
 
           <!-- SECTION: BRANDING -->
-          <div class="fadein">
+          <div>
             <h3>Branding</h3>
             <p>Natalie, Celine, and I created moodboards, discussed personality levers, and explored color palettes and typefaces. At the end of the semester, we determined visual elements to move forward with. With Josh, we also explored several logo designs.</p>
             <a href="branding_personality-levers.png" data-toggle="lightbox" data-gallery="userflow">
@@ -127,7 +127,7 @@
             <p><i>Personality levers</i></p>
           </div>
 
-          <div class="fadein">
+          <div>
             <a href="branding_logo-iterations.png" data-toggle="lightbox" data-gallery="userflow">
                   <img src="branding_logo-iterations.png" class="img-fluid lightbox-img" style="max-height: 70vh;">
                 </a>
@@ -135,7 +135,7 @@
           </div>
 
           <!-- SECTION: MARKETING -->
-          <div class="fadein">
+          <div>
             <h3>Marketing</h3>
             <p>I determined our marketing deliverables and timeline, and began forming the basis of our marketing strategy. I outlined marketing objectives that will be met through a combined strategy of owned, earned, and paid media in the weeks surrounding
               our launch. Our long-term marketing strategy will primarily focus on earned media as we want Filmify to live on by itself without active team engagement.</p>
@@ -145,7 +145,7 @@
           </div>
 
           <!-- SECTION: NEXT STEPS -->
-          <div class="fadein">
+          <div>
             <h3>Next steps</h3>
             <p>We are continuing this project in the Spring 2021 semester.</p>
             <ul>
@@ -160,7 +160,7 @@
           </div>
 
           <!-- SECTION: TEAM -->
-          <div class="fadein">
+          <div>
             <h3>Team</h3>
             <p>Natalie Duerr — Designer<br> Srilekha Nuli — Developer<br> Josh Pensky — Developer<br> Karisa Tzeng — Designer<br> Celine Yan — Designer</p>
           </div>
@@ -214,23 +214,6 @@
     $(".fixed-footer").on('mouseover', function() {
       $(".fixed-footer").removeClass('hidden');
     });
-  </script>
-
-  <!-- Fade in content on scroll -->
-  <script>
-    $(document).on("scroll", function() {
-      var pageTop = $(document).scrollTop();
-      var pageBottom = pageTop + $(window).height();
-      var tags = $(".fadein");
-
-      for (var i = 0; i < tags.length; i++) {
-        var tag = tags[i];
-
-        if ($(tag).position().top + 300 < pageBottom) {
-          $(tag).addClass("visible");
-        }
-      }
-    })
   </script>
 
   <!-- Global Site Tag (gtag.js) - Google Analytics -->

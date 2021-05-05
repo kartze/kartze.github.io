@@ -53,7 +53,7 @@
           <p>For my Interaction Design course at Northeastern University, I designed and prototyped a web application.</p>
 
           <!-- SECTION: EMPATHIZE -->
-          <div class="fadein">
+          <div>
             <h3>Empathize</h3>
             <p>I conducted 4 remote, moderated user interviews to better understand people who cook at home. Specifically, I had the following objectives:</p>
             <ul>
@@ -64,7 +64,7 @@
             </ul>
           </div>
 
-          <div class="fadein">
+          <div>
             <p>After interviewing with home cooks across age groups and living situations, my major takeaways were that cooking is...</p>
             <ul>
               <li><b>ingredient-driven</b> - Home cooks typically decide what to cook right before a meal, and therefore aim to use ingredients that they currently have. When deciding on a recipe to use, ingredients take precedence over the directions. When
@@ -77,7 +77,7 @@
             </ul>
           </div>
 
-          <div class="fadein">
+          <div>
             <p>And unfortunately, cooking is also...</p>
             <ul>
               <li><b>time and effort</b> - While home cooks may find cooking cost-effective, social, fun, and a source of pride, on busy days they may consider ordering takeout or going out to eat instead. Eating out instead of cooking is also considered
@@ -86,14 +86,14 @@
           </div>
 
           <!-- SECTION: DEFINE + IDEATE -->
-          <div class="fadein">
+          <div>
             <h3>Define + Ideate</h3>
             <p>Discovering a user need for a quicker and easier way to determine what to cook, I wrote an elevator pitch to guide my project moving forward.</p>
             <p id="verticallinesection">Piecemeal is a platform for home cooks to <b>record</b>, <b>discover</b>, and <b>share</b> recipes.<br> Piecemeal provides encouragement to beginner home cooks by being <b>flexible</b>, <b>inspiring</b>, and <b>social</b>.
             </p>
           </div>
 
-          <div class="fadein">
+          <div>
             <p>Classmates helped me create UI sketches given the elevator pitch during a brainstorm activity.</p>
             <a href="sketches.png" data-toggle="lightbox">
                 <img src="sketches.png" class="img-fluid lightbox-img" style="max-height: 70vh;">
@@ -101,19 +101,19 @@
           </div>
 
           <!-- SECTION: PROTOTYPE -->
-          <div class="fadein">
+          <div>
             <h3>Prototype</h3>
             <p>I created low- to high-fidelity wireframes, through rounds of critique and iteration.</p>
           </div>
 
-          <div class="fadein">
+          <div>
             <a href="prototype_low-fi-wireframes.png" data-toggle="lightbox">
                 <img src="prototype_low-fi-wireframes.png" class="img-fluid lightbox-img" style="max-height: 70vh;">
               </a>
             <p><i>Low-fidelity wireframes using Balsamiq.</i></p>
           </div>
 
-          <div class="fadein">
+          <div>
             <a href="prototype_mid-fi-wireframes.png" data-toggle="lightbox">
                 <img src="prototype_mid-fi-wireframes.png" class="img-fluid lightbox-img" style="max-height: 70vh;">
               </a>
@@ -122,7 +122,7 @@
           </div>
 
           <!-- SECTION: FINAL -->
-          <div class="fadein">
+          <div>
             <h3>Final Prototype</h3>
             <a href="https://www.figma.com/proto/snYI1SLIO5VpOiyHmzKl3p/ARTG2400-Final-Browser-Prototype?node-id=0%3A143&viewport=5861%2C3509%2C0.6028260588645935&scaling=min-zoom">
                 <img src="prototype_final.png" style="max-height: 70vh;">
@@ -130,7 +130,7 @@
             <p>I created my final <a href="https://www.figma.com/proto/snYI1SLIO5VpOiyHmzKl3p/ARTG2400-Final-Browser-Prototype?node-id=0%3A143&viewport=623%2C481%2C0.04538388550281525&scaling=min-zoom" target="_blank">high-fidelity, clickable prototype</a>.</p>
           </div>
 
-          <div class="fadein">
+          <div>
             <h3>Reflection</h3>
             <p>Although I was already familiar with the design thinking process, this was the first time I actually applied it end-to-end on an individual software design project. I struggled with, but ultimately learned the most in, the Prototype stage.
               I gained more experience in UI and identity design and gained self-taught technical skills in Figma.</p>
@@ -191,23 +191,6 @@
     $(".fixed-footer").on('mouseover', function() {
       $(".fixed-footer").removeClass('hidden');
     });
-  </script>
-
-  <!-- Fade in content on scroll -->
-  <script>
-    $(document).on("scroll", function() {
-      var pageTop = $(document).scrollTop();
-      var pageBottom = pageTop + $(window).height();
-      var tags = $(".fadein");
-
-      for (var i = 0; i < tags.length; i++) {
-        var tag = tags[i];
-
-        if ($(tag).position().top + 300 < pageBottom) {
-          $(tag).addClass("visible");
-        }
-      }
-    })
   </script>
 
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
