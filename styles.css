@@ -97,6 +97,7 @@ p {
     z-index: 1030;
   }
   .fixed-area {
+    position: fixed;
     opacity: 1;
     visibility: visible;
     transition: opacity 600ms ease-out;
