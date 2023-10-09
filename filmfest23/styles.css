@@ -1,0 +1,51 @@
+body {
+  margin: auto;
+  margin-top: 5%;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #fcfbf7;
+  text-align: center;
+  max-width: 430px;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #3c26c9;
+  font-size: 3em;
+}
+
+a {
+  position: relative;
+  color:#6852f2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gold;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  bottom: 0;
+  background: gold;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+a:hover:after, a:focus:after, a:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+div {
+  margin-bottom: 48px;
+}
+
+p {
+  margin:4px;
+}
