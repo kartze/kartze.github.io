@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*{
+  font-family: 'Inter', serif; 
+}
+body{
+  background-color: #EFEFEF;
+}
+
+
+
+
+.swiper{
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+}
+.swiper-slide{
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-slide img{
+  height: 100%;
+  width: 100%;
+}
+.swiper-navBtn{
+  color: #6852f2;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #3c26c9;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6852f2;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #3c26c9;
+}
+
+
+
+
+@media screen and (max-width: 625px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
