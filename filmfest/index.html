@@ -25,10 +25,6 @@
   <h2>Upcoming</h2>
 
   <div class="paragraph">
-    <p><b>Oct 29 - Craft</b> | <a href="https://rgp.app/4kCyGWr8kxq" target="_blank">RSVP</a></p>
-    <p>What goes into a short film? From live-action, animation, mixed media, and more, we'll watch some films and then peek behind the scenes.</p>
-  </div>
-  <div class="paragraph">
     <p><b>Nov 5 - Finale</b> | <a href="https://rgp.app/aHDQcoBqJc4" target="_blank">RSVP</a></p>
     <p>We'll reflect on our favorites and wrap up with some final films.</p>
   </div>
@@ -172,6 +168,75 @@
       </div>
     </div>
   </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="paragraph">
+          <p><b>Oct 29 - Craft</b></p>
+          <p>What goes into a short film? From live-action, animation, mixed media, and more, we'll watch some films and then peek behind the scenes.</p>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="swiper swiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-target="https://vimeo.com/203126235">
+              <img src="../filmfest18/bigger_picture_thumbnail.jpg" alt="">
+              <p>The Bigger Picture</p>
+            </div>
+
+            <div class="swiper-slide" data-target="https://vimeo.com/26877221">
+              <img src="../filmfest18/gulp_thumbnail.jpg" alt="">
+              <p>Gulp</p>
+            </div>
+
+            <div class="swiper-slide" data-target="https://vimeo.com/15055444">
+              <img src="../filmfest18/dot_thumbnail.jpg" alt="">
+              <p>Dot</p>
+            </div>
+
+            <div class="swiper-slide" data-target="https://vimeo.com/120893601">
+              <img src="me_you_thumbnail.jpg" alt="">
+              <p>Me & You</p>
+            </div>
+
+            <div class="swiper-slide" data-target="https://vimeo.com/783453584">
+              <img src="vandal_thumbnail.jpg" alt="">
+              <p>The Vandal</p>
+            </div>
+
+            <div class="swiper-slide" data-target="https://vimeo.com/203126235">
+              <img src="../filmfest18/bigger_picture_thumbnail.jpg" alt="">
+              <p>The Bigger Picture</p>
+            </div>
+
+            <div class="swiper-slide" data-target="https://vimeo.com/26877221">
+              <img src="../filmfest18/gulp_thumbnail.jpg" alt="">
+              <p>Gulp</p>
+            </div>
+
+            <div class="swiper-slide" data-target="https://vimeo.com/15055444">
+              <img src="../filmfest18/dot_thumbnail.jpg" alt="">
+              <p>Dot</p>
+            </div>
+
+            <div class="swiper-slide" data-target="https://vimeo.com/120893601">
+              <img src="me_you_thumbnail.jpg" alt="">
+              <p>Me & You</p>
+            </div>
+
+            <div class="swiper-slide" data-target="https://vimeo.com/783453584">
+              <img src="vandal_thumbnail.jpg" alt="">
+              <p>The Vandal</p>
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <hr>
 
@@ -225,6 +290,7 @@
 
     var swiper = new Swiper(".swiper1", params);
     var swiper2 = new Swiper(".swiper2", params);
+    var swiper3 = new Swiper(".swiper3", params);
 
     for (let slide of document.getElementsByClassName("swiper-slide")) {
       let target = slide.dataset.target;
